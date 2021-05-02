@@ -9,5 +9,13 @@
 </head>
 <body>
     @yield('content')
+
+    <script src="{{ asset('js/plugins/feathericons/feathericons.min.js') }}"></script>
+
+    <script>
+        window.addEventListener('load', function () {
+            feather.replace()
+        })
+    </script>
 </body>
 </html>

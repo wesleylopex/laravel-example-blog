@@ -1,3 +1,13 @@
 @tailwind base;
+
+.feather {
+    stroke: currentColor;
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+    @apply w-6 h-6 flex-shrink-0;
+}
+
 @tailwind components;
 @tailwind utilities;

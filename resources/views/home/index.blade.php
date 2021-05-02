@@ -15,8 +15,9 @@
                     </a>
                     <p class="mt-2 text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, dolore molestias ducimus, similique.</p>
                     <a href="#">
-                        <button class="mt-2 hover:underline text-blue-600">
+                        <button class="mt-2 flex items-center hover:underline text-blue-600">
                             Ver mais
+                            <i class="ml-1" data-feather="chevron-right"></i>
                         </button>
                     </a>
                 </div>
@@ -31,8 +32,9 @@
                     </a>
                     <p class="mt-2 text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, dolore molestias ducimus, similique.</p>
                     <a href="#">
-                        <button class="mt-2 hover:underline text-blue-600">
+                        <button class="mt-2 flex items-center hover:underline text-blue-600">
                             Ver mais
+                            <i class="ml-1" data-feather="chevron-right"></i>
                         </button>
                     </a>
                 </div>
@@ -47,8 +49,9 @@
                     </a>
                     <p class="mt-2 text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, dolore molestias ducimus, similique.</p>
                     <a href="#">
-                        <button class="mt-2 hover:underline text-blue-600">
+                        <button class="mt-2 flex items-center hover:underline text-blue-600">
                             Ver mais
+                            <i class="ml-1" data-feather="chevron-right"></i>
                         </button>
                     </a>
                 </div>
@@ -63,8 +66,9 @@
                     </a>
                     <p class="mt-2 text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, dolore molestias ducimus, similique.</p>
                     <a href="#">
-                        <button class="mt-2 hover:underline text-blue-600">
+                        <button class="mt-2 flex items-center hover:underline text-blue-600">
                             Ver mais
+                            <i class="ml-1" data-feather="chevron-right"></i>
                         </button>
                     </a>
                 </div>
