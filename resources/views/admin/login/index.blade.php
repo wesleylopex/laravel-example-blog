@@ -2,7 +2,7 @@
 
 @section('content')
     <section class="py-12 bg-gray-100 h-screen flex items-center">
-        <div class="max-w-screen-xl mx-auto">
+        <div class="max-w-screen-xl mx-auto px-4">
             <div class="w-full max-w-sm mx-auto p-4 bg-white shadow-md rounded-sm">
                 <form action="" method="POST" class="grid grid-cols-1 gap-4">
                     <div>

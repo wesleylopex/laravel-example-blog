@@ -17,7 +17,8 @@ use App\Http\Controllers\admin\PostsController;
 |
 */
 
-Route::get('/', HomeController::class);
+Route::get('/', [HomeController::class, 'index']);
+Route::get('/post/{id}', [HomeController::class, 'show'])->name('post');
 
 Route::prefix('admin')->group(function () {
     Route::redirect('/', 'admin/login');
