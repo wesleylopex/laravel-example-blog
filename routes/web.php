@@ -22,6 +22,6 @@ Route::get('/', HomeController::class);
 Route::prefix('admin')->group(function () {
     Route::redirect('/', 'admin/login');
     Route::get('/login', LoginController::class);
-    Route::get('/posts', [PostsController::class, 'form']);
-    Route::post('/posts/save', [PostsController::class, 'save'])->name('posts/save');
+    Route::get('/posts', [PostsController::class, 'form'])->name('admin/posts');
+    Route::post('/posts/save', [PostsController::class, 'save'])->name('admin/posts/save');
 });

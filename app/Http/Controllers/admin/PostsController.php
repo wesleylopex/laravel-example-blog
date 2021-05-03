@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Post;
 use Illuminate\Http\Request;
 
 class PostsController extends Controller
@@ -16,16 +17,16 @@ class PostsController extends Controller
     {
         $validated = $request->validate([
             'title' => 'required|max:100',
-            'content' => 'required',
-            'image' => 'required'
+            'content' => 'required'
         ]);
 
         $post = [
             'title' => $request->input('title'),
-            'content' => $request->input('content'),
-            'images' => $request->input('image')
+            'content' => $request->input('content')
         ];
 
-        echo json_encode($post);
+        $created = Post::create($post);
+
+        return redirect()->route('admin/posts');
     }
 }
