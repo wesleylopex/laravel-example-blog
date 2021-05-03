@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\admin\LoginController;
+use App\Http\Controllers\admin\PostsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +18,10 @@ use App\Http\Controllers\HomeController;
 */
 
 Route::get('/', HomeController::class);
+
+Route::prefix('admin')->group(function () {
+    Route::redirect('/', 'admin/login');
+    Route::get('/login', LoginController::class);
+    Route::get('/posts', [PostsController::class, 'form']);
+    Route::post('/posts/save', [PostsController::class, 'save'])->name('posts/save');
+});
