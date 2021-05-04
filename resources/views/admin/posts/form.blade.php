@@ -11,11 +11,11 @@
                     </button>
                 </a>
                 <form action="{{ route('admin/posts/save') }}" method="POST" class="mt-10 grid grid-cols-1 gap-4">
-                    @csrf
                     @if (isset($post))
                         @method('put')
                         <input type="hidden" name="id" value="{{ $post->id }}">
                     @endif
+                    @csrf
                     <h1 class="text-gray-800 font-medium text-2xl">{{ isset($post) ? 'Editar' : 'Adicionar' }} post</h1>
                     <div>
                         <label class="block text-gray-800" for="title">Título</label>

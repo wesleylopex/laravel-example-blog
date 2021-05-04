@@ -33,11 +33,13 @@
                                 </a>
                             </td>
                             <td class="p-2 border border-gray-300">
-                                <a href="{{ route('admin/posts/delete', ['post' => $post->id]) }}">
+                                <form action="{{ route('admin/posts/delete', ['post' => $post->id]) }}" method="post">
+                                    @method('delete')
+                                    @csrf
                                     <button class="mt-2 p-1 rounded-full flex items-center hover:underline text-blue-600">
                                         <i data-feather="trash"></i>
                                     </button>
-                                </a>
+                                </form>
                             </td>
                         </tr>
                     @endforeach

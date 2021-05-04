@@ -27,6 +27,13 @@ class PostsController extends Controller
         ]);
     }
 
+    public function delete(Post $post)
+    {
+        $post->delete();
+
+        return redirect()->route('admin/posts');
+    }
+
     public function save(Request $request)
     {
         $request->validate([
