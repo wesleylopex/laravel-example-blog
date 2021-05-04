@@ -14,7 +14,7 @@
                         <input type="text" id="password" name="password" class="mt-2 p-2 w-full border border-gray-300 rounded-sm">
                     </div>
                     <div>
-                        <a href="#">
+                        <a href="{{ route('admin/posts') }}">
                             <button type="button" class="w-full bg-gray-600 rounded-sm py-2 text-gray-100">
                                 Entrar
                             </button>
